@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/style.css')
+    title Squadre
+  body
+    header.header
+      h1 Benvenuto alla pagina principale
+    article.container
+      div.person
+          div.person-image(style=`background: url('${Lal[0].pathImmagine}') top center no-repeat; background-size: cover;`)
+          a(href='/LosAngelesLakers') Los Angeles Lakers 
+    
+      div.person
+          div.person-image(style=`background: url('${Phx[0].pathImmagine}') top center no-repeat; background-size: cover;`)
+          a(href='/PhoenixSuns') Phoenix Suns
+
+      div.person
+          div.person-image(style=`background: url('${Gsw[0].pathImmagine}') top center no-repeat; background-size: cover;`)
+          a(href='/GoldenStateWarriors') Golden State Warriors
